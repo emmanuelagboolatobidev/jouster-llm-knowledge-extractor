@@ -39,12 +39,12 @@ docker-build:
 	docker build -t llm-knowledge-extractor:latest .
 
 docker-run:
-	docker-compose up -d
+	docker compose up -d
 
 docker-stop:
-	docker-compose down
+	docker compose down
 
 docker-logs:
-	docker-compose logs -f
+	docker compose logs -f
 
 .DEFAULT_GOAL := help
